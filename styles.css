@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+  body {
+    font-family: 'DM Sans', sans-serif !important;
+  }
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000000;
+    padding: 24px;
+    color: white;
+}
+
+header .logo {
+  width: 200px;
+  height: 60px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+header .img {
+    width: 25px;
+    height: 25px;
+}
+header .navigation ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  header .navigation ul li {
+    padding: 6px 0px;
+  }
+  header .navigation ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header .navigation ul li a:hover,
+  header .navigation ul li a:active,
+  header .navigation ul li a:focus {
+    color: #ffffff;
+  }
+  header .navigation ul li a:hover .fa,
+  header .navigation ul li a:active .fa,
+  header .navigation ul li a:focus .fa {
+    color: #b3b3b3;
+  }
+  header .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  header .navigation ul li a:hover .fa:hover,
+  header .navigation ul li a:hover .fa:active,
+  header .navigation ul li a:hover .fa:focus {
+    color: #ffffff;
+  }
+header .download{
+   position: sticky;
+
+}
+header .nav-list {
+    padding-left: 35px;
+}
+
+header .search {
+    /* And finally some styling for the search functionality */
+}
+main{
+    
+background: linear-gradient(180deg, #222222 0%, #1F1F1F 11.64%, #171717 25.66%, #161616 32.94%, #151515 35.98%, #131313 44.89%, #121212 55.22%, #121212 75.34%, #121212 85.45%, rgba(18, 18, 18, 0) 100%);
+
+} 
+.topbar {
+  position: fixed;
+    top: 0;
+    left: 270px;
+    right: 0;
+    display: flex;
+    justify-content: space-between !important;
+    padding: 14px 30px;
+  }
+  .topbar .prev-next-buttons button {
+    color: #7a7a7a;
+    cursor: not-allowed;
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    font-size: 18px;
+    border: 0px;
+    background-color: #090909;
+    margin-right: 10px;
+  }
+  .topbar .profile{
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+    border-radius: 16px;
+    padding: 1px;
+    background-color: #000;
+
+  }
+  .topbar .p-pic{
+    width: 25px;
+    height: 25px;
+    background-color: #2a2a2a;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 2px;
+    display: grid;
+    place-items: center;
+}
+.topbar .expand-arrow{
+  transform: rotateZ(180deg);
+    margin-right: 8px;
+}
+#main-scroll-page{
+  margin-left: 270px;
+}
+#featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    padding-top: 70px;
+}
+
+#featured .playlist-card {
+    margin: 10px;
+    padding: 0px;
+    background-color: #282828;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 300px;
+}
+
+#musicPlayer {
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    background-color: #181818;
+    color: white;
+}
+
+
+#musicPlayer .track-info {
+  /* And some styling for the track info here */
+    display: flex;
+    align-items: center;
+}
+
+#musicPlayer .track-info .name{
+  font-weight: bolder;
+}
+
+#musicPlayer .track-info .artist{
+  font-size:10px ;
+}
+#musicPlayer .playback {
+  /* We can add styling specifically for the play/pause, next/prev buttons here */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  margin-left: auto;
+
+}
+#musicPlayer .playback .controls {
+  /* We can add styling specifically for the play/pause, next/prev buttons here */
+  display: flex;
+  align-items: center;
+  
+
+}
+#musicPlayer .playback .progress-bar {
+  /* And finally some styling for the progress bar */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#musicPlayer .playback .progress-bar .p-bar-css{
+  padding: 0 10px 0 10px;
+}
+#musicPlayer .playback .progress-bar .time{
+  font-size: 14px;
+  color:#C4C4C4;
+  ;
+}
+#musicPlayer .volume {
+  /* And some styling for the volume controls */
+  display: flex;
+    align-items: center;
+    padding-right: 20px;
+    margin-left: auto;
+}
+
+#musicPlayer .volume img{
+  /* And some styling for the volume controls */
+  padding: 4px;
+}
+#playlistGrid {
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+#playlistGrid .playlist-card {
+    background-color: #282828;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#playlistGrid .playlist-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    height: auto;
+
+}
+
+#playlistGrid .playlist-card .title {
+    /* Add some styling for the title here */
+    font-size: 21px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#playlistGrid .playlist-card p {
+   padding-left: 20px;
+   margin-bottom: 0px;
+}
+#playlistDetail {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+}
+
+#playlistDetail .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#playlistDetail .header img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#playlistDetail .header .info {
+  /* Add some styling for the playlist title, description, and other info here */
+}
+
+#playlistDetail .tracklist {
+  margin-top: 40px;
+  /* Add some styling for the tracklist here */
+}
