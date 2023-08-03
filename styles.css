@@ -436,12 +436,9 @@ tr .border-bottom {
   #playlistDetail .header img {
       width: 100%;
   }
-  #musicPlayer .track-info {
-    
-  }
   #musicPlayer .track-info .name {
     display: none;
-}
+  }
 #musicPlayer .track-info .name-small{
   display: inline-block; 
 }
